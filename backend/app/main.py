@@ -6,7 +6,7 @@ import logging
 from app.routers.uploads import save_upload
 from app.services.indexer import index_document
 from app.services.retriever import retrieve
-from app.services.rag import answer
+from app.services.gemini import answer
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
