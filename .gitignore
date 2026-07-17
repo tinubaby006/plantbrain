@@ -1,32 +1,109 @@
-# Python virtual environments
-backend/venv/
-backend/.venv/
+# =========================
+# Python
+# =========================
 
-# Python cache
-**/__pycache__/
+__pycache__/
 *.py[cod]
 *$py.class
+*.egg-info/
+*.egg
 
-# Environment variables
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache / tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# =========================
+# Environment Variables
+# =========================
+
 .env
+.env.*
+!.env.example
 
-# IDE
-.vscode/
-.idea/
 
-# OS files
-.DS_Store
-Thumbs.db
+# =========================
+# Backend — Generated Data
+# =========================
 
-# Logs
-*.log
-
-# Uploaded files
+# Uploaded documents
 backend/uploads/
 
-# Test cache
-.pytest_cache/
+# ChromaDB vector store
+backend/chroma_db/
 
-# Next.js
-frontend/node_modules/
-frontend/.next/
+# SQLite / generic databases
+*.db
+*.sqlite3
+
+
+# =========================
+# Frontend (Next.js)
+# =========================
+
+node_modules/
+.next/
+out/
+.vercel/
+
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+
+# =========================
+# OS Files
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# =========================
+# IDE / Editor
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# =========================
+# Temporary Files
+# =========================
+
+*.tmp
+*.temp
+*.bak
+
+
+# =========================
+# PlantBrain Specific
+# =========================
+
+# Raw industrial documents
+data/raw/
+
+# Generated embeddings cache
+data/embeddings/
+
+# Extracted text cache
+data/extracted/
+
+# Test output artefacts
+tests/output/

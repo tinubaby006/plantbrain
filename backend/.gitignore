@@ -1,0 +1,23 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test cache
+.pytest_cache/
+
+# Uploaded files
+backend/uploads/
+
+# Chroma database
+backend/chroma_db/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
