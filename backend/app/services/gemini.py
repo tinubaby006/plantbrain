@@ -55,7 +55,7 @@ def _build_prompt(question: str, context_block: str) -> str:
 def answer(
     question: str,
     top_k: int = 5,
-    model: str = "gemini-2.0-flash",
+    model: str = "gemini-3.5-flash",
 ) -> dict:
     """
     Full RAG pipeline: retrieve relevant chunks → generate a grounded answer.

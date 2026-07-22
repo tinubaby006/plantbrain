@@ -29,7 +29,7 @@ class SearchRequest(BaseModel):
 class QueryRequest(BaseModel):
     question: str
     top_k: int = 5
-    model: str = "gemini-2.0-flash"
+    model: str = "gemini-3.5-flash"
 
 
 # ---------------------------------------------------------------------------
